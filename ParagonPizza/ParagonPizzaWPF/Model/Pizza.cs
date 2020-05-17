@@ -10,13 +10,15 @@ namespace ParagonPizzaWPF.Model
     {
         public int OrderId { get; set; }
         public Base Base{ get; set; }
-        public List<Topping> Toppings { get; set; }
+        public Topping Topping1 { get; set; }
+        public Topping Topping2 { get; set; }
+        public Topping Topping3 { get; set; }
+        public Topping Topping4 { get; set; }
         public Status Status { get; set; }
 
         public Pizza()
         {
             Status = Status.NewOrder;
-            Toppings = new List<Topping>();
         }
     }
 }
