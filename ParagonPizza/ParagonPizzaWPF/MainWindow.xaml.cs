@@ -36,7 +36,7 @@ namespace ParagonPizzaWPF
 
             //put next pizza on conveyor belt
             _dispatcherTimer.Tick += new EventHandler(StartCookingOrder);
-            _dispatcherTimer.Interval = new TimeSpan(0, 0, Convert.ToInt32(_cooker.CookingTime / 2));
+            _dispatcherTimer.Interval = new TimeSpan(0, 0, Convert.ToInt32(_cooker.CookingTime / 10));//time to get into cooker
             _dispatcherTimer.Start();
 
             InitializeComponent();
@@ -56,10 +56,10 @@ namespace ParagonPizzaWPF
                         Base = (Base)BaseDropdown.SelectedItem
                     };
 
-                    pizza.Toppings.Add((Topping)Topping1Dropdown.SelectedItem);
-                    pizza.Toppings.Add((Topping)Topping2Dropdown.SelectedItem);
-                    pizza.Toppings.Add((Topping)Topping3Dropdown.SelectedItem);
-                    pizza.Toppings.Add((Topping)Topping4Dropdown.SelectedItem);
+                    pizza.Topping1 = (Topping)Topping1Dropdown.SelectedItem;
+                    pizza.Topping2 = (Topping)Topping2Dropdown.SelectedItem;
+                    pizza.Topping3 = (Topping)Topping3Dropdown.SelectedItem;
+                    pizza.Topping4 = (Topping)Topping4Dropdown.SelectedItem;
                     pizza.Status = Status.Queued;
 
                     _cooker.PizzaQueue.Add(pizza);

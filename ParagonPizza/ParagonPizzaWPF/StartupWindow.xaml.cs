@@ -29,13 +29,13 @@ namespace ParagonPizzaWPF
         private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {
             var parseable = int.TryParse(CookingTimeTextBox.Text, out _cookingTime);
-            if(parseable)
+            if(parseable && _cookingTime >= 10)
             {
                 this.DialogResult = true;
             }
             else
             {
-                MessageBox.Show("Please enter an integer.");
+                MessageBox.Show("Please enter an integer of 10 or more.");
             }
         }
 

@@ -19,10 +19,8 @@
         <ComboBox HorizontalAlignment="Left" Margin="105,117,0,0" VerticalAlignment="Top" Width="250" Name="Topping4Dropdown"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Topping 4:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
         <Button Content="Create Order" HorizontalAlignment="Left" Margin="105,154,0,0" VerticalAlignment="Top" Width="250" Click="Create_Order_Button_Click"/>
-        <DataGrid HorizontalAlignment="Left" Height="187" Margin="360,10,0,0" VerticalAlignment="Top" Width="424" Name="PizzaDataGrid">
-            <DataGrid.Columns>
-                <DataGridTextColumn/>
-            </DataGrid.Columns>
+        <DataGrid Height="187" Margin="360,10,16.4,0" VerticalAlignment="Top" Name="PizzaDataGrid">
+            <DataGrid.Columns/>
         </DataGrid>
     </Grid>
 </Window>
