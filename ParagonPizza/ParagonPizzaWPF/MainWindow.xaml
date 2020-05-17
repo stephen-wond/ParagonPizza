@@ -1,0 +1,28 @@
+﻿<Window x:Class="ParagonPizzaWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParagonPizzaWPF"
+        mc:Ignorable="d"
+        Title="Paragon Pizza" Height="247.393" Width="800" >
+    <Grid Margin="0,0,-6.4,-5" Height="213" VerticalAlignment="Top">
+        <Button Content="Refresh Orders" HorizontalAlignment="Left" Margin="105,178,0,0" VerticalAlignment="Top" Width="250" RenderTransformOrigin="-0.552,-0.501" Click="Refresh_Button_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="250" Name="BaseDropdown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Pizza Base:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
+        <ComboBox HorizontalAlignment="Left" Margin="105,36,0,0" VerticalAlignment="Top" Width="250" Name="Topping1Dropdown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" Text="Topping 1:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
+        <ComboBox HorizontalAlignment="Left" Margin="105,63,0,0" VerticalAlignment="Top" Width="250" Name="Topping2Dropdown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Topping 2:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
+        <ComboBox HorizontalAlignment="Left" Margin="105,90,0,0" VerticalAlignment="Top" Width="250" Name="Topping3Dropdown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,91,0,0" TextWrapping="Wrap" Text="Topping 3:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
+        <ComboBox HorizontalAlignment="Left" Margin="105,117,0,0" VerticalAlignment="Top" Width="250" Name="Topping4Dropdown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Topping 4:" TextAlignment="Right" VerticalAlignment="Top" Height="22" Width="90"/>
+        <Button Content="Create Order" HorizontalAlignment="Left" Margin="105,154,0,0" VerticalAlignment="Top" Width="250" Click="Create_Order_Button_Click"/>
+        <DataGrid HorizontalAlignment="Left" Height="187" Margin="360,10,0,0" VerticalAlignment="Top" Width="424" Name="PizzaDataGrid">
+            <DataGrid.Columns>
+                <DataGridTextColumn/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
